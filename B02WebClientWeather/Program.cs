@@ -42,7 +42,7 @@ namespace B02WebClientWeather
 
 
             }
-                Console.ReadKey();
+             
 
             
             

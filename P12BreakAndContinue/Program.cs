@@ -22,6 +22,42 @@ namespace P12BreakAndContinue
                 }
             }
             */
+
+
+            // break
+            //string equation = "10 200";
+            ////012345                
+            ////  i
+            //int index = 0;
+            //int spacePosition = -1;
+            //while (index < equation.Length)
+            //{
+            //    if (equation.Substring(index, 1) == " ")
+            //    {
+            //        spacePosition = index;
+            //        break; // exits from while 
+            //    }
+            //    index++;
+            //}
+
+            string equation = "10 200";
+            //012345                
+            //  i
+            int index = 0;
+            int spacePosition = -1;
+            while (index < equation.Length)
+            {
+                if (equation.Substring(index, 1) == " ")
+                {
+                    spacePosition = index;
+
+                    if (index == 2)
+                        continue; // skips actual iteration 
+                }
+                index++;
+            }
+
+
         }
     }
 }
